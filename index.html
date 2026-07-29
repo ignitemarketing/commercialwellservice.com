@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Commercial Well Service — Drilling, Maintenance & Decommissioning</title>
+<meta name="description" content="Commercial water well drilling, pump service, water treatment, and decommissioning for industrial, agricultural, and municipal sites across British Columbia.">
+<meta name="theme-color" content="#1E40AF">
+<meta property="og:title" content="Commercial Well Service — Drilling, Maintenance & Decommissioning">
+<meta property="og:description" content="Commercial water well drilling, pump service, and decommissioning across British Columbia.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://commercialwellservice.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231E40AF' rx='6'/%3E%3Cpath d='M16 6 L16 26 M10 12 L22 12 M8 18 L24 18 M10 24 L22 24' stroke='%23FBBF24' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        display: ['Manrope', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif']
+      },
+      colors: {
+        steel:   { 100: '#E5E9F0', 200: '#C5CCD9', 700: '#334155', 800: '#1E293B', 900: '#0F172A' },
+        deep:    { 500: '#3B82F6', 600: '#2563EB', 700: '#1D4ED8', 800: '#1E40AF', 900: '#1E3A8A' },
+        amber:   { 400: '#FBBF24', 500: '#F59E0B' },
+        sand:    { 50: '#FAFAF7', 100: '#F5F4ED' }
+      }
+    }
+  }
+}
+</script>
+<style>
+  body { font-family: 'Inter', system-ui, sans-serif; }
+  .font-display { font-family: 'Manrope', system-ui, sans-serif; letter-spacing: -0.02em; }
+  *:focus-visible { outline: 3px solid #1E40AF; outline-offset: 3px; border-radius: 4px; }
+  .strata {
+    background-image:
+      linear-gradient(180deg, transparent 0, transparent 60px, rgba(30,64,175,.04) 60px, rgba(30,64,175,.04) 62px,
+                              transparent 62px, transparent 120px, rgba(30,64,175,.04) 120px, rgba(30,64,175,.04) 122px,
+                              transparent 122px, transparent 180px, rgba(30,64,175,.04) 180px, rgba(30,64,175,.04) 182px);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal { opacity: 0; transform: translateY(20px); animation: rise .7s ease-out forwards; }
+    .reveal-2 { animation-delay: .1s; }
+    @keyframes rise { to { opacity: 1; transform: translateY(0); } }
+  }
+</style>
+</head>
+<body class="bg-sand-50 text-steel-900 antialiased">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-deep-800 text-white px-4 py-2 rounded-md z-50 text-sm font-medium">Skip to content</a>
+
+<header class="sticky top-0 z-30 border-b border-steel-200 bg-sand-50/90 backdrop-blur">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3" aria-label="Commercial Well Service home">
+      <span class="w-9 h-9 rounded-md bg-deep-800 grid place-items-center" aria-hidden="true">
+        <svg class="w-5 h-5" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 6 L16 26 M10 12 L22 12 M8 18 L24 18 M10 24 L22 24" stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </span>
+      <span class="font-display font-bold text-lg leading-tight tracking-tight">Commercial<br class="md:hidden"><span class="text-deep-800">Well Service</span></span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-steel-700" aria-label="Primary">
+      <a href="#services" class="hover:text-deep-700 transition-colors">Services</a>
+      <a href="#projects" class="hover:text-deep-700 transition-colors">Projects</a>
+      <a href="#area" class="hover:text-deep-700 transition-colors">Service area</a>
+      <a href="tel:+18001234567" class="inline-flex items-center gap-1.5 bg-deep-800 hover:bg-deep-900 text-white px-4 py-2 rounded-md font-semibold transition-colors min-h-[44px]">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.37 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+        24/7 emergency
+      </a>
+    </nav>
+    <a href="tel:+18001234567" class="md:hidden bg-deep-800 text-white px-4 py-2 rounded-md text-sm font-semibold min-h-[44px] inline-flex items-center">Call us</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden strata">
+    <div class="relative max-w-7xl mx-auto px-6 pt-20 pb-24 md:pt-28 md:pb-28">
+      <div class="grid md:grid-cols-12 gap-10 items-center">
+        <div class="md:col-span-7 reveal">
+          <div class="inline-flex items-center gap-2 bg-deep-800/10 border border-deep-800/20 px-3 py-1.5 rounded-full text-xs font-bold mb-7 text-deep-800 uppercase tracking-wider">
+            <span class="w-1.5 h-1.5 bg-amber-500 rounded-full" aria-hidden="true"></span>
+            Serving BC since 2008 &middot; Licensed &amp; bonded
+          </div>
+          <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight mb-7">
+            Commercial water wells.<br>
+            <span class="text-deep-800">Drilled, served, decommissioned.</span>
+          </h1>
+          <p class="text-lg md:text-xl text-steel-700 leading-relaxed mb-10 max-w-2xl">
+            Industrial, agricultural, and municipal water well work across British
+            Columbia. Six rigs, four crews, twenty-thousand wells of experience.
+            Permitted, GWP-compliant, and on-site when you need us.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="tel:+18001234567" class="inline-flex items-center justify-center gap-2 bg-deep-800 hover:bg-deep-900 text-white px-7 py-4 rounded-md text-base font-bold transition-colors min-h-[52px]">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.37 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+              1-800-123-4567
+            </a>
+            <a href="#services" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-steel-100 text-steel-900 border border-steel-200 px-7 py-4 rounded-md text-base font-bold transition-colors min-h-[52px]">
+              See services
+            </a>
+          </div>
+          <div class="mt-12 grid grid-cols-3 gap-6 max-w-xl">
+            <div>
+              <div class="font-display text-3xl font-bold text-deep-800">20,000+</div>
+              <div class="text-xs text-steel-700 mt-1 uppercase tracking-wider">Wells serviced</div>
+            </div>
+            <div>
+              <div class="font-display text-3xl font-bold text-deep-800">6 rigs</div>
+              <div class="text-xs text-steel-700 mt-1 uppercase tracking-wider">Truck + skid mounted</div>
+            </div>
+            <div>
+              <div class="font-display text-3xl font-bold text-deep-800">24/7</div>
+              <div class="text-xs text-steel-700 mt-1 uppercase tracking-wider">Emergency response</div>
+            </div>
+          </div>
+        </div>
+        <aside class="md:col-span-5">
+          <!-- Cross-section illustration -->
+          <div class="relative aspect-[3/4] max-w-sm mx-auto">
+            <svg viewBox="0 0 300 400" class="w-full h-full" aria-hidden="true">
+              <!-- Sky -->
+              <rect width="300" height="80" fill="#E0F2FE"/>
+              <!-- Sun -->
+              <circle cx="240" cy="40" r="20" fill="#FBBF24"/>
+              <!-- Ground -->
+              <rect y="80" width="300" height="40" fill="#A3A380"/>
+              <!-- Strata -->
+              <rect y="120" width="300" height="60" fill="#D6CCAA"/>
+              <rect y="180" width="300" height="50" fill="#A8896C"/>
+              <rect y="230" width="300" height="80" fill="#7C8B92"/>
+              <rect y="310" width="300" height="90" fill="#5B6D78"/>
+              <!-- Aquifer -->
+              <rect y="280" width="300" height="35" fill="#3B82F6" opacity="0.45"/>
+              <!-- Well casing -->
+              <rect x="146" y="60" width="8" height="320" fill="#475569"/>
+              <rect x="142" y="58" width="16" height="8" fill="#1E293B"/>
+              <!-- Pump head -->
+              <rect x="138" y="42" width="24" height="20" fill="#1E40AF"/>
+              <path d="M138 42 L150 30 L162 42 Z" fill="#FBBF24"/>
+              <!-- Water -->
+              <circle cx="150" cy="300" r="3" fill="#67E8F9"/>
+              <circle cx="155" cy="320" r="2" fill="#67E8F9"/>
+              <circle cx="145" cy="340" r="2.5" fill="#67E8F9"/>
+              <circle cx="150" cy="360" r="3" fill="#67E8F9"/>
+              <!-- Labels -->
+              <text x="20" y="105" font-family="Inter, sans-serif" font-size="9" fill="#334155" font-weight="500">SURFACE</text>
+              <text x="20" y="155" font-family="Inter, sans-serif" font-size="9" fill="#334155" font-weight="500">SOIL</text>
+              <text x="20" y="210" font-family="Inter, sans-serif" font-size="9" fill="#fff" font-weight="500">CLAY</text>
+              <text x="20" y="265" font-family="Inter, sans-serif" font-size="9" fill="#fff" font-weight="500">ROCK</text>
+              <text x="20" y="305" font-family="Inter, sans-serif" font-size="9" fill="#fff" font-weight="700">AQUIFER</text>
+            </svg>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-24 md:py-32 bg-white border-y border-steel-200">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-2xl mb-16">
+        <div class="text-xs uppercase tracking-[0.2em] text-deep-700 font-bold mb-4">Services</div>
+        <h2 class="font-display text-4xl md:text-5xl font-bold leading-tight mb-5">
+          Every stage of a commercial well&rsquo;s life.
+        </h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <article class="rounded-xl border-2 border-steel-200 hover:border-deep-700 transition-colors p-7 bg-white">
+          <div class="w-12 h-12 rounded-lg bg-deep-800 text-white flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v20M8 6l4 4 4-4M8 18l4-4 4 4"/></svg>
+          </div>
+          <h3 class="font-display text-lg font-bold mb-2">Drilling</h3>
+          <p class="text-sm text-steel-700 leading-relaxed">New commercial wells, rotary and air-rotary methods, 6&Prime; to 16&Prime; casing, depths to 1500 ft. Site survey, permitting, completion docs.</p>
+        </article>
+        <article class="rounded-xl border-2 border-steel-200 hover:border-deep-700 transition-colors p-7 bg-white">
+          <div class="w-12 h-12 rounded-lg bg-deep-800 text-white flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+          </div>
+          <h3 class="font-display text-lg font-bold mb-2">Pump service</h3>
+          <p class="text-sm text-steel-700 leading-relaxed">Submersible &amp; line-shaft installation, pulls, rebuilds, replacements. Three-phase, VFD, soft-start. Same-day on the Lower Mainland.</p>
+        </article>
+        <article class="rounded-xl border-2 border-steel-200 hover:border-deep-700 transition-colors p-7 bg-white">
+          <div class="w-12 h-12 rounded-lg bg-deep-800 text-white flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
+          </div>
+          <h3 class="font-display text-lg font-bold mb-2">Treatment</h3>
+          <p class="text-sm text-steel-700 leading-relaxed">Iron / manganese / sulphur removal, softening, UV, chlorination, RO. Designed for actual usage curves, not catalogue throughput.</p>
+        </article>
+        <article class="rounded-xl border-2 border-steel-200 hover:border-deep-700 transition-colors p-7 bg-white">
+          <div class="w-12 h-12 rounded-lg bg-deep-800 text-white flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg>
+          </div>
+          <h3 class="font-display text-lg font-bold mb-2">Decommissioning</h3>
+          <p class="text-sm text-steel-700 leading-relaxed">Abandonment to GWP standards. Bentonite, cement, neat-cement plug. Full reporting filed with the province. Liability cleared.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-24 md:py-32 bg-deep-900 text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-2xl mb-16">
+        <div class="text-xs uppercase tracking-[0.2em] text-amber-400 font-bold mb-4">Recent projects</div>
+        <h2 class="font-display text-4xl md:text-5xl font-bold leading-tight">
+          Built for the long-haul jobs.
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-5">
+        <div class="rounded-xl border border-white/10 bg-white/5 backdrop-blur p-7">
+          <div class="text-xs font-mono uppercase tracking-widest text-amber-400 mb-3">Agriculture</div>
+          <h3 class="font-display text-xl font-bold mb-2">Fraser Valley dairy</h3>
+          <p class="text-sm text-white/70 leading-relaxed">Twin 12&Prime; production wells, 800 ft, paired iron/manganese treatment train. 14-day mobilization.</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-white/5 backdrop-blur p-7">
+          <div class="text-xs font-mono uppercase tracking-widest text-amber-400 mb-3">Municipal</div>
+          <h3 class="font-display text-xl font-bold mb-2">North Okanagan utility</h3>
+          <p class="text-sm text-white/70 leading-relaxed">3-well booster system, SCADA-integrated, UV disinfection. Commissioned in Q2, on schedule.</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-white/5 backdrop-blur p-7">
+          <div class="text-xs font-mono uppercase tracking-widest text-amber-400 mb-3">Industrial</div>
+          <h3 class="font-display text-xl font-bold mb-2">Kamloops cement plant</h3>
+          <p class="text-sm text-white/70 leading-relaxed">Decommissioning of six legacy production wells, GWP-compliant plug + report. Liability transferred.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA + CTA -->
+  <section id="area" class="py-24 md:py-32 bg-sand-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="text-xs uppercase tracking-[0.2em] text-deep-700 font-bold mb-4">Service area</div>
+          <h2 class="font-display text-3xl md:text-4xl font-bold leading-tight mb-6">
+            All of British Columbia.<br>Mainland, Island, Interior.
+          </h2>
+          <p class="text-lg text-steel-700 mb-6">
+            Crews dispatched from Vancouver, Kelowna, and Prince George. Permits and
+            authorities-having-jurisdiction handled in-house. We&rsquo;ve worked every
+            regional district in the province.
+          </p>
+          <ul class="space-y-2 text-steel-700">
+            <li class="flex items-start gap-2"><span class="text-deep-700 mt-1" aria-hidden="true">&bull;</span>Lower Mainland &amp; Fraser Valley</li>
+            <li class="flex items-start gap-2"><span class="text-deep-700 mt-1" aria-hidden="true">&bull;</span>Vancouver Island &amp; Gulf Islands</li>
+            <li class="flex items-start gap-2"><span class="text-deep-700 mt-1" aria-hidden="true">&bull;</span>Okanagan, Kootenays, Cariboo</li>
+            <li class="flex items-start gap-2"><span class="text-deep-700 mt-1" aria-hidden="true">&bull;</span>Northern BC &amp; Peace River</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-2xl border border-steel-200 p-8 shadow-sm">
+          <h3 class="font-display text-2xl font-bold mb-2">Need a quote?</h3>
+          <p class="text-sm text-steel-700 mb-6">Tell us the site and the scope. We&rsquo;ll come back same-day on weekdays.</p>
+          <a href="tel:+18001234567" class="block w-full text-center bg-deep-800 hover:bg-deep-900 text-white font-bold px-7 py-4 rounded-md transition-colors mb-3 min-h-[52px] inline-flex items-center justify-center gap-2">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.37 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+            1-800-123-4567
+          </a>
+          <a href="/cdn-cgi/l/email-protection#5322263c27362013303c3e3e3621303a323f24363f3f203621253a30367d303c3e" class="block w-full text-center bg-white hover:bg-steel-100 text-steel-900 border border-steel-200 font-semibold px-7 py-4 rounded-md transition-colors min-h-[52px] inline-flex items-center justify-center">
+            <span class="__cf_email__" data-cfemail="2352564c57465063404c4e4e4651404a424f54464f4f504651554a40460d404c4e">[email&#160;protected]</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="border-t border-steel-200 bg-white py-12">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+    <div class="flex items-center gap-3">
+      <span class="w-7 h-7 rounded-md bg-deep-800 grid place-items-center" aria-hidden="true">
+        <svg class="w-4 h-4" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 6 L16 26 M10 12 L22 12 M8 18 L24 18 M10 24 L22 24" stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </span>
+      <span class="font-display font-bold">Commercial <span class="text-deep-800">Well Service</span></span>
+      <span class="text-sm text-steel-700 ml-2">&copy; 2026 &mdash; Licensed BC well driller</span>
+    </div>
+    <div class="flex items-center gap-6 text-sm text-steel-700">
+      <a href="tel:+18001234567" class="hover:text-deep-700 transition-colors">1-800-123-4567</a>
+      <a href="/cdn-cgi/l/email-protection#166763796273655675797b7b7364757f777a61737a7a657364607f75733875797b" class="hover:text-deep-700 transition-colors"><span class="__cf_email__" data-cfemail="374642584352447754585a5a5245545e565b40525b5b445245415e54521954585a">[email&#160;protected]</span></a>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
