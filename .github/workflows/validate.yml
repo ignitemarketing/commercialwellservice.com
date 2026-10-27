@@ -1,0 +1,76 @@
+# PR gate for the static site. The job id `validate` is the required status
+# check on main. Setup steps stay fail-fast; every check step runs even after
+# an earlier one fails (`if: ${{ !cancelled() ... }}`), and the summary step
+# names every failure. scripts/check-run-through.mjs fails the job if a check
+# step loses that condition.
+
+name: validate
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out the pull request merge ref
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+
+      - name: Set up Node
+        id: setup
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '24'
+
+      - name: HTML validation
+        id: html
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        run: npx --yes html-validate@11.6.2 "**/*.html"
+
+      # Crawl local links only. /cdn-cgi/ is Cloudflare's edge namespace and
+      # never exists in the repo.
+      - name: Local link check
+        id: links
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        run: npx --yes linkinator@8.0.3 . --recurse --skip '^https?://(?!(localhost|127\.0\.0\.1|\[::1\])[:/])' --skip '/cdn-cgi/'
+
+      - name: No localhost references
+        id: localhost
+        if: ${{ !cancelled() }}
+        run: "! grep -rEn 'http://localhost|127\\.0\\.0\\.1' --include=*.html --include=*.css --include=*.js --exclude-dir=node_modules ."
+
+      - name: Run-through policy
+        id: policy
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        run: node scripts/check-run-through.mjs .github/workflows/validate.yml
+
+      - name: Summary
+        if: ${{ !cancelled() }}
+        env:
+          RESULTS: >-
+            html=${{ steps.html.outcome }}
+            links=${{ steps.links.outcome }}
+            localhost=${{ steps.localhost.outcome }}
+            policy=${{ steps.policy.outcome }}
+        run: |
+          failed=""
+          for r in $RESULTS; do
+            case "$r" in *=success) ;; *) failed="$failed ${r%%=*}(${r#*=})" ;; esac
+          done
+          if [ -n "$failed" ]; then
+            echo "::error::failed checks:$failed"
+            exit 1
+          fi
+          echo "all checks passed"

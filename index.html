@@ -12,27 +12,9 @@
 <meta property="og:url" content="https://commercialwellservice.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet"></noscript>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231E40AF' rx='6'/%3E%3Cpath d='M16 6 L16 26 M10 12 L22 12 M8 18 L24 18 M10 24 L22 24' stroke='%23FBBF24' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      fontFamily: {
-        display: ['Manrope', 'system-ui', 'sans-serif'],
-        sans: ['Inter', 'system-ui', 'sans-serif']
-      },
-      colors: {
-        steel:   { 100: '#E5E9F0', 200: '#C5CCD9', 700: '#334155', 800: '#1E293B', 900: '#0F172A' },
-        deep:    { 500: '#3B82F6', 600: '#2563EB', 700: '#1D4ED8', 800: '#1E40AF', 900: '#1E3A8A' },
-        amber:   { 400: '#FBBF24', 500: '#F59E0B' },
-        sand:    { 50: '#FAFAF7', 100: '#F5F4ED' }
-      }
-    }
-  }
-}
-</script>
 <style>
   body { font-family: 'Inter', system-ui, sans-serif; }
   .font-display { font-family: 'Manrope', system-ui, sans-serif; letter-spacing: -0.02em; }
@@ -49,6 +31,7 @@ tailwind.config = {
     @keyframes rise { to { opacity: 1; transform: translateY(0); } }
   }
 </style>
+<link rel="stylesheet" href="/style.css">
 </head>
 <body class="bg-sand-50 text-steel-900 antialiased">
 
