@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://commercialwellservice.com/sitemap.xml
