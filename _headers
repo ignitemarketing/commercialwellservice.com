@@ -1,0 +1,9 @@
+# Cloudflare Pages response headers. CSP ships as Report-Only first: switch
+# the header name to Content-Security-Policy once a deploy shows no console
+# violations, and drop cdn.tailwindcss.com / 'unsafe-inline' from script-src
+# once the Tailwind Play CDN and its inline config are gone (#2).
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://cdn.tailwindcss.com 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
